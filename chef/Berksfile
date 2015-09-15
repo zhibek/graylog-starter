@@ -1,0 +1,7 @@
+source "https://supermarket.chef.io"
+
+metadata
+cookbook 'java', '~> 1.35.0'
+cookbook 'elasticsearch', '~> 0.3.14'
+cookbook 'mongodb', '~> 0.16.2'
+cookbook 'graylog2', '~> 1.1.6'
