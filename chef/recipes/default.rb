@@ -8,5 +8,5 @@ include_recipe "graylog2::api_access"
 
 # Create sample input (gelf udp)
 graylog2_inputs "gelf udp" do
-  input '{ "title": "gelf", "type":"org.graylog2.inputs.gelf.udp.GELFUDPInput", "global": true, "configuration": { "port": 12201, "allow_override_date": true, "bind_address": "0.0.0.0", "store_full_message": true, "recv_buffer_size": 1048576 } }'
+  input '{ "title": "gelf", "type":"org.graylog2.inputs.gelf.udp.GELFUDPInput", "global": true, "configuration": { "port": 12201, "allow_override_date": true, "bind_address": "0.0.0.0", "store_full_message": true, "recv_buffer_size": 262144 } }'
 end
