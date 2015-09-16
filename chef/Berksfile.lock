@@ -1,11 +1,11 @@
 DEPENDENCIES
   elasticsearch (~> 0.3.14)
   graylog2 (~> 1.1.6)
-  java (~> 1.35.0)
-  mongodb (~> 0.16.2)
-  site
+  graylog_starter
     path: .
     metadata: true
+  java (~> 1.35.0)
+  mongodb (~> 0.16.2)
 
 GRAPH
   7-zip (1.0.2)
@@ -24,6 +24,11 @@ GRAPH
     elasticsearch (>= 0.0.0)
     java (>= 0.0.0)
     mongodb (>= 0.0.0)
+  graylog_starter (0.1.0)
+    elasticsearch (>= 0.0.0)
+    graylog2 (>= 0.0.0)
+    java (>= 0.0.0)
+    mongodb (>= 0.0.0)
   java (1.35.0)
   mongodb (0.16.2)
     apt (>= 1.8.2)
@@ -36,11 +41,6 @@ GRAPH
     yum-epel (>= 0.0.0)
   runit (1.7.2)
     packagecloud (>= 0.0.0)
-  site (0.1.0)
-    elasticsearch (>= 0.0.0)
-    graylog2 (>= 0.0.0)
-    java (>= 0.0.0)
-    mongodb (>= 0.0.0)
   windows (1.38.1)
     chef_handler (>= 0.0.0)
   yum (3.7.1)
